@@ -36,8 +36,6 @@ while True:
 		webbrowser.open("http://172.20.10.4/dockerstop.html")
 	elif (("open" in ch) or ("run" in ch) or ("execute" in ch)) and (("linux" in ch) or ("command" in ch)):
 		webbrowser.open("http://172.20.10.4/linux.html") 
-	elif("stop" in ch) or ("exit" in ch):
-		print("Ok, Thankyou {0}".format(name))
 
 #Windows opearting system command, to run this command make sure you have added the path of application in the environment Variable..!
 
@@ -105,6 +103,7 @@ while True:
 		os.system("chrome  https://google.com/search?q=%s" % query)
 
 	elif "exit" in ch or "quit" in ch:
+		print("Ok, Thankyou {0}".format(name))
 		pyttsx3.speak("Closing the tool! Thank you! Have a great day!")
 		break
 
