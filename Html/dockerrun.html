@@ -1,0 +1,76 @@
+
+<style type="text/css">
+form 
+{
+    border: 3px solid #f1f1f1; 
+    width: 50%; 
+    border-radius: 25px; 
+    background: rgba(0,0,0,0.5);
+    margin: auto;
+    padding: 10px;
+
+}
+
+input[type=text],input[type=file],input[type=password],select{
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit]{
+  width: 15%;
+  background-color:royalblue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+body
+{
+	background: linear-gradient(to bottom, #669999 0%, #00cc99 100%);
+}
+
+h2, label
+{
+	color:white;
+}
+a
+{
+	text-decoration:none;
+	color:red;
+}
+</style>
+<body >
+<br />
+<br />
+<br />
+<br />
+<br />
+<form action="http://172.20.10.4/cgi-bin/drun.py">
+<h2 align="center"> Create your Docker instance </h2>
+<center> 
+<label>Enter instance name: </label><br /><input type="text" name="t1" placeholder="Enter instance name" autocomplete="off"/>
+<br />
+<label>Enter OS name: </label><br /><select name="i">
+				<option>Choose one</option>
+				<option>ubuntu:14.04</option>
+				<option>centos:7</option>
+				<option>centos:latest</option>
+			      </select>
+<br />
+<input type="submit" /><br /><label>To stop Instance :</label><a href="dockerstop.html">&nbsp;Click here</a><br /><label>To check running Instance :</label><a href="http://172.20.10.4/cgi-bin/dps.py">&nbsp;Click here</a>
+</center>
+</form>
+</body>
